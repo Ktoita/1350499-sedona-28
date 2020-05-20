@@ -8,35 +8,47 @@
 <body>
 	<div class="container">
 		
-		<header>
-			<a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип"></a>
-			<nav>
-				<ul>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
-					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
+		<header class="page-header">
+			<a href="index.html" class="page-header__logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип"></a>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Информация</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Фото и видео</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Карта штата</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Гостиницы</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<h1>Фильтр гостиниц</h1>
+			<h1 class="title">Фильтр гостиниц</h1>
+
+			<!--Форма поиска-->
 			
-			<section>
-				<ul>
-					<li>
-						<div>
+			<section class="hotels">
+				<ul class="hotels__list">
+					<li class="hotels__item">
+						<div class="hotels__photo">
 							<img src="img/Layer 21.jpg" width="135" height="90" alt="Фотография гостиницы">
 						</div>
 
-						<div>
-							<a href="#">
+						<div class="hotels__info">
+							<a class="hotels__info__name" href="#">
 								<h2>Amara resort & spa</h2>
 							</a>
-							<p>гостиница от 4000 р.</p>
-							<button type="button">Подробнее</button>
-							<button type="button">Забронировать</button>
+							<p class="hotels__info__price"><span>гостиница</span> <span>от 4000 р.</span></p>
+							<div class="hotels__info__button">
+								<a class="hotels__info__button__details" href="#">Подробнее</a>
+								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
+							</div>
 						</div>
 
 						<div>
@@ -44,18 +56,20 @@
 						</div>
 					</li>
 
-					<li>
-						<div>
+					<li class="hotels__item">
+						<div class="hotels__photo">
 							<img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Фотография мотеля">
 						</div>
 
-						<div>
-							<a href="#">
+						<div class="hotels__info">
+							<a class="hotels__info__name" href="#">
 								<h2>Desert quail inn</h2>
 							</a>
-							<p>мотель от 2000 р.</p>
-							<button type="button">Подробнее</button>
-							<button type="button">Забронировать</button>
+							<p class="hotels__info__price"><span>мотель</span> <span>от 2000 р.</span></p>
+							<div>
+								<a class="hotels__info__button__details" href="#">Подробнее</a>
+								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
+							</div>
 						</div>
 
 						<div>
@@ -63,18 +77,20 @@
 						</div>
 					</li>
 
-					<li>
-						<div>
+					<li class="hotels__item">
+						<div class="hotels__photo">
 							<img src="img/Rectangle.jpg" width="135" height="90" alt="Фотография апартаментов">
 						</div>
 
-						<div>
-							<a href="#">
+						<div class="hotels__info">
+							<a class="hotels__info__name" href="#">
 								<h2>Villas at poco diablo</h2>
 							</a>
-							<p>апартаменты от 2000 р.</p>
-							<button type="button">Подробнее</button>
-							<button type="button">Забронировать</button>
+							<p class="hotels__info__price"><span>апартаменты</span> <span>от 2000 р.</span></p>
+							<div>
+								<a class="hotels__info__button__details" href="#">Подробнее</a>
+								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
+							</div>
 						</div>
 
 						<div>
@@ -85,21 +101,19 @@
 			</section>
 		</main>
 
-		<footer>
-			<div>
+		<footer class="page-footer">
+			<div class="page-footer__contact">
 				<p>#VISITSEDONA<br> Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
 			</div>
-
-			<div>
-				<ul>
-					<li><a href="#">Вконтакте</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Инстаграм</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>
+			
+			<ul class="page-footer__social-links social-links">
+				<li><a class="social-links__link" href="#">Вконтакте</a></li>
+				<li><a class="social-links__link" href="#">Фейсбук</a></li>
+				<li><a class="social-links__link" href="#">Инстаграм</a></li>
+			</ul>
+			
+			<div class="html-academy">
+				<p>Website by <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>
 			</div> 
 		</footer>
 	</div>
