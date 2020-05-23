@@ -9,17 +9,19 @@
 	<div class="container">
 
 		<header class="page-header">
-			<a class="page-header__logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип"></a>
+			<a class="page-header__logo">
+				<img src="img/logo.svg" width="138" height="70" alt="Логотип">
+			</a>
 			<nav class="navigation">
 				<ul class="navigation__list">
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Информация</a>
+						<a href="blink.html" class="navigation__link">Информация</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Фото и видео</a>
+						<a href="blink.html" class="navigation__link">Фото и видео</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Карта штата</a>
+						<a href="blink.html" class="navigation__link">Карта штата</a>
 					</li>
 					<li class="navigation__item">
 						<a href="hotels.html" class="navigation__link">Гостиницы</a>
@@ -33,7 +35,7 @@
 				<img src="img/welcome.svg" width="456.65" height="350.88" alt="Приветствие">
 			</div>
 			
-			<h1 class="title">Седона</h1>
+			<h1 class="title visually-hidden">Штат Седона</h1>
 
 			<section class="about-sedona">
 				<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -104,11 +106,37 @@
 			</section>
 
 			<section class="search-hotels">
-				<div class="search-hotels__title">
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				</div>
-				<!-- Форма записи -->
+					
+					<div class="search-hotels__pop-up">
+						<button class="search-hotels__button" type="button">Поиск гостиницы в Седоне</button>
+						<form>
+							<p class="search-hotels__arrival-date">
+								<label for="arrival-date">Дата заезда:</label>
+								<input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+							</p>
+							<p class="search-hotels__date-of-departure">
+								<label for="date-of-departure">Дата выезда:</label>
+								<input id="date-of-departure" type="text" name="date-of-departure" placeholder="4 июля 2017">
+							</p>
+							<div search-hotels__guests>
+								<p class="search-hotels__guests-adults">
+									<label for="guests-adults">Взрослые:</label>
+									<button class="turn down"></button>
+									<input id="guests-adults" type="number" name="guests-adults" placeholder="2">
+									<button class="add"></button>
+								</p>
+								<p class="search-hotels__guests-children">
+									<label for="guests-children">Дети:</label>
+									<button class="turn down"></button>
+									<input id="guests-children" type="number" name="guests-children" placeholder="0">
+									<button class="add"></button>
+								</p>
+							</div>
+							<button class="search" type="submit">Найти</button>
+						</form>
+					</div>
 			</section>
 
 			<div class="map">
