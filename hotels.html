@@ -29,9 +29,56 @@
 		</header>
 
 		<main>
-			<h1 class="title">Фильтр гостиниц</h1>
+			<h1 class="title visually-hidden">Фильтр гостиниц</h1>
 
-			<!--Форма поиска-->
+			<form action="" method="get">
+				<div class="infrastructure">
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="pool" id="pool" checked>
+							<label for="pool">Бассейн</label>
+						</li>
+						<li>
+							<input type="checkbox" name="parking" id="parking">
+							<label for="pool">Парковка</label>
+						</li>
+						<li>
+							<input type="checkbox" name="wi-fi" id="wi-fi">
+							<label for="wi-fi">Wi-Fi</label>
+						</li>
+					</ul>
+				</div>
+				<div class="housing-typologies">
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="hotel" id="hotel" checked>
+							<label for="hotel">Отель</label>
+						</li>
+						<li>
+							<input type="checkbox" name="motel" id="motel" checked>
+							<label for="motel">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" name="apartments" id="apartments" checked>
+							<label for="apartments">Апартаменты</label>
+						</li>
+					</ul>
+				</div>
+				<div class="price-slider">
+					<legend>Стоимость в сутки (р):</legend>
+					<div class="price-amount">
+						<label for="price-min">от</label>
+						<input type="text" class="price-min" name="price-min" value="0">
+						<label for="price-max">до</label>
+						<input type="text" class="price-max" name="price-max" value="3000">
+					</div>
+					<div class="slider">
+						<!--слайдер-->
+					</div>
+				</div>
+			</form>
 			
 			<section class="hotels">
 				<ul class="hotels__list">
