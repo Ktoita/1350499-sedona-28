@@ -13,16 +13,16 @@
 			<nav class="navigation">
 				<ul class="navigation__list">
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Информация</a>
+						<a href="blink.html" class="navigation__link">Информация</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Фото и видео</a>
+						<a href="blink.html" class="navigation__link">Фото и видео</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Карта штата</a>
+						<a href="blink.html" class="navigation__link">Карта штата</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Гостиницы</a>
+						<a href="blink.html" class="navigation__link">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -31,8 +31,8 @@
 		<main>
 			<h1 class="title visually-hidden">Фильтр гостиниц</h1>
 
-			<form action="" method="get">
-				<div class="infrastructure">
+			<form action="https://echo.htmlacademy.ru" method="get" class="housing-search">
+				<div class="housing-search__infrastructure">
 					<legend>Инфраструктура:</legend>
 					<ul>
 						<li>
@@ -41,7 +41,7 @@
 						</li>
 						<li>
 							<input type="checkbox" name="parking" id="parking">
-							<label for="pool">Парковка</label>
+							<label for="parking">Парковка</label>
 						</li>
 						<li>
 							<input type="checkbox" name="wi-fi" id="wi-fi">
@@ -49,7 +49,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="housing-typologies">
+				<div class="housing-search__housing-typologies">
 					<legend>Тип жилья:</legend>
 					<ul>
 						<li>
@@ -66,19 +66,35 @@
 						</li>
 					</ul>
 				</div>
-				<div class="price-slider">
+				<div class="housing-search__price">
 					<legend>Стоимость в сутки (р):</legend>
 					<div class="price-amount">
 						<label for="price-min">от</label>
-						<input type="text" class="price-min" name="price-min" value="0">
+						<input class="price-min" type="text" name="price-min" id="price-min" value="0">
 						<label for="price-max">до</label>
-						<input type="text" class="price-max" name="price-max" value="3000">
+						<input class="price-max" type="text" name="price-max" id="price-max" value="3000">
 					</div>
-					<div class="slider">
-						<!--слайдер-->
-					</div>
+					<div id="slider-range"></div>
 				</div>
+				<button type="submit" class="housing-search__but-find">Найти</button>
 			</form>
+
+			<section class="sorting">
+				<div class="sorting__block-1">
+					<label for="result">Найдено: </label>
+					<input type="number" name="result" id="result" value="3" disabled>
+				</div>
+				<div class="sorting__block-2">
+					<span>Сортировка: </span>
+					<button class="by-price" type="button">По цене</button>
+					<button class="by-type" type="button">По типу</button>
+					<button class="by-rating" type="button">По рейтингу</button>
+				</div>
+				<div class="sorting__block-3">
+					<button class="ascending" type="button"></button>
+					<button class="descending" type="button"></button>
+				</div>
+			</section>
 			
 			<section class="hotels">
 				<ul class="hotels__list">
@@ -91,15 +107,19 @@
 							<a class="hotels__info__name" href="#">
 								<h2>Amara resort & spa</h2>
 							</a>
-							<p class="hotels__info__price"><span>гостиница</span> <span>от 4000 р.</span></p>
+							<p class="hotels__info__price">
+								<span class="type">гостиница</span>
+								<span class="price">от 4000 р.</span>
+							</p>
 							<div class="hotels__info__button">
 								<a class="hotels__info__button__details" href="#">Подробнее</a>
 								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
 							</div>
 						</div>
 
-						<div>
-							<!-- форма рейтинга -->
+						<div class="hotels__info2">
+							<span class="4-class-category"></span> <!-- звёзды -->
+							<span class="rating">Рейтинг: 8,5</span>
 						</div>
 					</li>
 
@@ -112,15 +132,19 @@
 							<a class="hotels__info__name" href="#">
 								<h2>Desert quail inn</h2>
 							</a>
-							<p class="hotels__info__price"><span>мотель</span> <span>от 2000 р.</span></p>
-							<div>
+							<p class="hotels__info__price">
+								<span class="type">мотель</span>
+								<span class="price">от 2000 р.</span>
+							</p>
+							<div class="hotels__info__button">
 								<a class="hotels__info__button__details" href="#">Подробнее</a>
 								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
 							</div>
 						</div>
 
-						<div>
-							<!-- форма рейтинга -->
+						<div class="hotels__info2">
+							<span class="3-class-category"></span> <!-- звёзды -->
+							<span class="rating">Рейтинг: 8,9</span>
 						</div>
 					</li>
 
@@ -133,15 +157,19 @@
 							<a class="hotels__info__name" href="#">
 								<h2>Villas at poco diablo</h2>
 							</a>
-							<p class="hotels__info__price"><span>апартаменты</span> <span>от 2000 р.</span></p>
-							<div>
+							<p class="hotels__info__price">
+								<span class="type">апартаменты</span>
+								<span class="price">от 2000 р.</span>
+							</p>
+							<div class="hotels__info__button">
 								<a class="hotels__info__button__details" href="#">Подробнее</a>
 								<a class="hotels__info__button__reservation" href="#">Забронировать</a>
 							</div>
 						</div>
 
-						<div>
-							<!-- форма рейтинга -->
+						<div class="hotels__info2">
+							<span class="2-class-category"></span> <!-- звёзды -->
+							<span class="rating">Рейтинг: 9,2</span>
 						</div>
 					</li>
 				</ul>
