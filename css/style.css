@@ -1,0 +1,263 @@
+/* Fonts */
+
+
+/* pt-sans-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff');
+    /* Modern Browsers */
+}
+
+
+/* pt-sans-700 - latin_cyrillic */
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff');
+    /* Modern Browsers */
+}
+
+
+/* Variables */
+
+ :root {
+    --basic-black: #000000;
+    --basic-grey: #333333;
+    --basic-light-grey: #F2F2F2;
+    --basic-white: #FFFFFF;
+    --basic-light-blue: #81B3D2;
+    --basic-blue: #669EC0;
+    --basic-dark-blue: #5496BD;
+    --basic-light-brown: #766357;
+    --basic-brown: #604E43;
+    --basic-dark-brown: #503E33;
+}
+
+
+/* Global */
+
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--basic-grey);
+    text-transform: uppercase;
+    background-color: var(--basic-light-grey);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* Container */
+
+
+/* Navigation */
+
+.page-header {
+    background-color: var(--basic-white);
+}
+
+.navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.navigation__list {
+    list-style: none;
+}
+
+.navigation__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.navigation__list a:hover,
+.navigation__list a:focus {
+    color: var(--basic-light-blue);
+}
+
+.navigation__list a:active {
+    color: var(--basic-light-grey);
+}
+
+.navigation__list .active {
+    color: var(--basic-light-brown);
+}
+
+
+/* Maine-header */
+
+.header-welcome {
+    text-align: center;
+    background-image: url(../img/Group\ 2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1200px 509px;
+}
+
+.about-sedona {
+    text-align: center;
+    background-color: var(--basic-white);
+}
+
+.about-sedona__title {
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.about-sedona__introduction {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+/* Pop-up */
+
+.search-hotels {
+    background-color: var(--basic-white);
+    text-align: center;
+}
+
+.search-hotels__title {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.search-hotels__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* Page-footer */
+
+.page-footer {
+    background-color: var(--basic-white);
+}
+
+.page-footer__contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.page-footer__contacts a {
+    color: var(--basic-black);
+}
+
+.social {
+    list-style: none;
+}
+
+.social__item a {
+    background-color: var(--basic-light-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social__item a:hover,
+.social__item a:focus {
+    background-color: var(--basic-blue);
+}
+
+.social__item a:active {
+    background-color: var(--basic-dark-blue);
+}
+
+.link-reservation {
+    background-color: var(--basic-light-brown);
+}
+
+.page-footer__copyright {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+/* hotels */
+
+.hotels {
+    background-color: var(--basic-white);
+}
+
+.hotels__list {
+    list-style: none;
+}
+
+.info-1__name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.info-1__price,
+.info-2__rating,
+.info-1__link {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.info-2__rating {
+    background-color: var(--basic-light-grey);
+}
+
+.info-1__link {
+    color: var(--basic-white);
+}
+
+.link-details {
+    background-color: var(--basic-light-blue);
+}
+
+.link-details:hover,
+.link-details:focus {
+    background-color: var(--basic-blue);
+}
+
+.link-details:active {
+    background-color: var(--basic-dark-blue);
+}
+
+.link-reservation {
+    background-color: var(--basic-light-brown);
+}
+
+.link-reservation:hover,
+.link-reservation:focus {
+    background-color: var(--basic-brown);
+}
+
+.link-reservation:active {
+    background-color: var(--basic-dark-brown);
+}
