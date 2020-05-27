@@ -216,6 +216,7 @@ img {
 }
 
 .info-1__name {
+    color: var(--basic-black);
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
