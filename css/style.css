@@ -50,6 +50,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     color: var(--basic-grey);
     text-transform: uppercase;
+    text-align: center;
     background-color: var(--basic-light-grey);
 }
 
@@ -92,6 +93,8 @@ img {
 
 .navigation__list {
     list-style: none;
+    padding: 0;
+    margin-left: 0;
 }
 
 .navigation__link {
@@ -117,7 +120,6 @@ img {
 /* Maine-header */
 
 .header-welcome {
-    text-align: center;
     background-image: url(../img/Group\ 2.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -141,11 +143,50 @@ img {
 }
 
 
+/* Content */
+
+.reason-1,
+.reason-2 {
+    background-color: var(--basic-light-blue);
+}
+
+.advantage-1,
+.advantage-2 {
+    background-color: var(--basic-white);
+}
+
+.text-block__title {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.text-block__number,
+.text-block__content {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.advantage-1__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.advantage-2__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+
 /* Pop-up */
+
+.popup {
+    display: none;
+}
 
 .search-hotels {
     background-color: var(--basic-white);
-    text-align: center;
 }
 
 .search-hotels__title {
@@ -178,6 +219,16 @@ img {
 
 .social {
     list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 46px;
 }
 
 .social__item a {
@@ -193,6 +244,10 @@ img {
 
 .social__item a:active {
     background-color: var(--basic-dark-blue);
+}
+
+.social__item a:active svg {
+    opacity: 30%;
 }
 
 .link-reservation {
@@ -213,6 +268,8 @@ img {
 
 .hotels__list {
     list-style: none;
+    padding: 0;
+    margin-left: 0;
 }
 
 .info-1__name {
@@ -235,10 +292,13 @@ img {
 
 .info-1__link {
     color: var(--basic-white);
+    font-weight: 700;
 }
 
 .link-details {
     background-color: var(--basic-light-blue);
+    width: 110px;
+    height: 27px;
 }
 
 .link-details:hover,
