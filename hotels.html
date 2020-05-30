@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="filter__housing-typologies">
+                <div class="filter__type">
                     <legend class="filter__title">Тип жилья:</legend>
                     <ul class="filter__list">
                         <li class="filter__item">
@@ -69,112 +69,112 @@
                         </li>
                     </ul>
                 </div>
-                <div class="filter__price price">
+                <div class="filter__price">
                     <legend class="filter__title">Стоимость в сутки (р):</legend>
-                    <div class="price__amount">
+                    <div class="price-amount">
                         <label for="price-min">от</label>
                         <input class="price-min" type="text" name="price-min" id="price-min" value="0">
                         <label for="price-max">до</label>
                         <input class="price-max" type="text" name="price-max" id="price-max" value="3000">
                     </div>
-                    <div id="price__slider-range"></div>
+                    <div id="price-slider"></div>
                 </div>
-                <button class="filter__button button-find" type="submit">Найти</button>
+                <button class="filter__button-show" type="submit">Показать</button>
             </form>
 
             <section class="sorting">
-                <div class="sorting__block-1 block-1">
+                <div class="filter-result">
                     <label for="result">Найдено: </label>
                     <input type="number" name="result" id="result" value="3" disabled>
                 </div>
-                <div class="sorting__block-2 block-2">
-                    <h3 class="block-2__title">Сортировка: </h3>
-                    <button class="block-2__button button-price" type="button">По цене</button>
-                    <button class="block-2__button button-type" type="button">По типу</button>
-                    <button class="block-2__button button-rating" type="button">По рейтингу</button>
+                <div class="top-sorting">
+                    <h3 class="top-sorting__title">Сортировка: </h3>
+                    <button class="top-sorting__button button-price" type="button">По цене</button>
+                    <button class="top-sorting__button button-type" type="button">По типу</button>
+                    <button class="top-sorting__button button-rating" type="button">По рейтингу</button>
                 </div>
-                <div class="sorting__block-3 block-3">
-                    <button class="block-3__button button-ascending" type="button"></button>
-                    <button class="block-3__button button-descending" type="button"></button>
+                <div class="order-sorting">
+                    <button class="order-sorting__button button-ascending" type="button" aria-label="Сортировать по возрастанию"></button>
+                    <button class="order-sorting__button button-descending" type="button" aria-label="Сортировать по убыванию"></button>
                 </div>
             </section>
 
             <section class="hotels">
                 <ul class="hotels__list">
                     <li class="hotels__item">
-                        <div class="hotels__photo">
-                            <img src="img/Layer 21.jpg" width="135" height="90" alt="Фотография гостиницы">
+                        <div class="hotels-photo">
+                            <img src="img/phot-amara-resort.jpg" width="135" height="90" alt="Фотография гостиницы Amara resort & spa">
                         </div>
 
-                        <div class="hotels__info-1 info-1">
-                            <a class="info-1__name" href="#">
+                        <div class="hotels-info">
+                            <a class="info-name" href="#">
                                 <h2>Amara resort & spa</h2>
                             </a>
-                            <p class="info-1__price">
-                                <span class="type">гостиница</span>
-                                <span class="price">от 4000 р.</span>
+                            <p class="info-price">
+                                <span class="info-price__type">гостиница</span>
+                                <span class="info-price__price">от 4000 р.</span>
                             </p>
-                            <div class="info-1__links">
-                                <a class="info-1__link link-details" href="#">Подробнее</a>
-                                <a class="info-1__link link-reservation" href="#">Забронировать</a>
+                            <div class="info-links">
+                                <a class="info-links__link link-details" href="#">Подробнее</a>
+                                <a class="info-links__link link-reservation" href="#">Забронировать</a>
                             </div>
                         </div>
 
-                        <div class="hotels__info-2 info-2">
-                            <span class="info-2__category 4-class-category"></span>
+                        <div class="info-rating">
+                            <span class="info-rating__category"></span>
                             <!-- звёзды -->
-                            <span class="info-2__rating">Рейтинг: 8,5</span>
+                            <span class="info-rating__rating">Рейтинг: 8,5</span>
                         </div>
                     </li>
 
                     <li class="hotels__item">
                         <div class="hotels__photo">
-                            <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Фотография мотеля">
+                            <img src="img/photo-desert-quail-inn.jpg" width="135" height="90" alt="Фотография мотеля Desert quail inn">
                         </div>
 
-                        <div class="hotels__info-1 info-1">
-                            <a class="info-1__name" href="#">
+                        <div class="hotels-info">
+                            <a class="info-name" href="#">
                                 <h2>Desert quail inn</h2>
                             </a>
-                            <p class="info-1__price">
-                                <span class="type">мотель</span>
-                                <span class="price">от 2000 р.</span>
+                            <p class="info-price">
+                                <span class="info-price__type">мотель</span>
+                                <span class="info-price__price">от 2000 р.</span>
                             </p>
-                            <div class="info-1__links">
-                                <a class="info-1__link link-details" href="#">Подробнее</a>
-                                <a class="info-1__link link-reservation" href="#">Забронировать</a>
+                            <div class="info-links">
+                                <a class="info-links__link link-details" href="#">Подробнее</a>
+                                <a class="info-links__link link-reservation" href="#">Забронировать</a>
                             </div>
 
-                            <div class="hotels__info-2 info-2">
-                                <span class="info-2__category 3-class-category"></span>
+                            <div class="info-rating">
+                                <span class="info-rating__category"></span>
                                 <!-- звёзды -->
-                                <span class="info-2__rating">Рейтинг: 8,9</span>
+                                <span class="info-rating__rating">Рейтинг: 8,9</span>
                             </div>
                     </li>
 
                     <li class="hotels__item">
                         <div class="hotels__photo">
-                            <img src="img/Rectangle.jpg" width="135" height="90" alt="Фотография апартаментов">
+                            <img src="img/photo-villas-at-poco-diablo.jpg" width="135" height="90" alt="Фотография апартаментов Villas at poco diablo">
                         </div>
 
-                        <div class="hotels__info-1 info-1">
-                            <a class="info-1__name" href="#">
+                        <div class="hotels-info">
+                            <a class="info-name" href="#">
                                 <h2>Villas at poco diablo</h2>
                             </a>
-                            <p class="info-1__price">
-                                <span class="type">апартаменты</span>
-                                <span class="price">от 2000 р.</span>
+                            <p class="info-price">
+                                <span class="info-price__type">апартаменты</span>
+                                <span class="info-price__price">от 2000 р.</span>
                             </p>
-                            <div class="info-1__links">
-                                <a class="info-1__link link-details" href="#">Подробнее</a>
-                                <a class="info-1__link link-reservation" href="#">Забронировать</a>
+                            <div class="info-links">
+                                <a class="info-links__link link-details" href="#">Подробнее</a>
+                                <a class="info-links__link link-reservation" href="#">Забронировать</a>
                             </div>
                         </div>
 
-                        <div class="hotels__info-2 info-2">
-                            <span class="info-2__category 2-class-category"></span>
+                        <div class="info-rating">
+                            <span class="info-rating__category"></span>
                             <!-- звёзды -->
-                            <span class="info-2__rating">Рейтинг: 9,2</span>
+                            <span class="info-rating__rating">Рейтинг: 9,2</span>
                         </div>
                     </li>
                 </ul>
