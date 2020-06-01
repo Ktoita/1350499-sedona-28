@@ -396,15 +396,18 @@ img {
     background-color: var(--basic-white);
     display: flex;
     flex-basis: auto;
-    justify-content: space-around;
+    justify-content: center;
     outline: 3px solid rgb(210, 224, 20);
     outline-offset: -3px;
 }
 
 .page-footer__contacts {
+    display: block;
+    width: 400px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    padding-left: 117px;
     outline: 3px solid rgb(74, 20, 224);
     outline-offset: -3px;
 }
@@ -418,7 +421,8 @@ img {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-basis: auto;
+    flex-basis: 400px;
+    justify-content: center;
     align-items: center;
     margin: 0 -3px;
     outline: 3px solid rgb(224, 61, 20);
@@ -455,6 +459,10 @@ img {
 }
 
 .page-footer__copyright {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
     font-size: 14px;
     line-height: 26px;
     outline: 3px solid rgb(30, 146, 15);
