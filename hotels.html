@@ -79,7 +79,7 @@
                         <div class="price-controls">
                             <label class="price-min">от <input type="number" name="price-min" min="0" max="3900" step="100" value="0">
                             </label>
-                            <label class="price-max" for="price-max">до <input type="number" name="price-max" min="1000" max="4000" step="100" value="3000">
+                            <label class="price-max">до <input type="number" name="price-max" min="1000" max="4000" step="100" value="3000">
                             </label>
                         </div>
                         <div class="range-controls">
@@ -102,9 +102,11 @@
                     </div>
                     <div class="top-sorting">
                         <h3 class="top-sorting__title">Сортировка: </h3>
-                        <a class="top-sorting__link link-price link--active">По цене</a>
-                        <a class="top-sorting__link link-type">По типу</a>
-                        <a class="top-sorting__link link-rating">По рейтингу</a>
+                        <ul class="top-sorting__list">
+                            <li class="top-sorting__link"><a class="link-price link--active">По цене</a></li>
+                            <li class="top-sorting__link"><a class="link-type">По типу</a></li>
+                            <li class="top-sorting__link"><a class="link-rating">По рейтингу</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="order-sorting">
