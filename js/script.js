@@ -28,15 +28,18 @@ buttonPopup.addEventListener("click", function(evt) {
     if (storageArrival) {
         dateArrival.value = storageArrival;
         dateDeparture.focus();
+
+        if (storageDeparture) {
+            dateDeparture.value = storageDeparture;
+            adults.focus();
+        } else {
+            dateDeparture.focus();
+        }
+
     } else {
         dateArrival.focus();
     }
-    if (storageDeparture) {
-        dateDeparture.value = storageDeparture;
-        adults.focus();
-    } else {
-        dateDeparture.focus();
-    }
+
 });
 
 form.addEventListener("submit", function(evt) {
