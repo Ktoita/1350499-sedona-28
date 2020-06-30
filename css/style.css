@@ -1345,7 +1345,7 @@ img {
     outline: 0;
 }
 
-111 .link-reservation:active {
+.link-reservation:active {
     background-color: var(--basic-dark-brown);
 }
 
