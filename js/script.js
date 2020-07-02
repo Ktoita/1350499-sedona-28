@@ -15,6 +15,8 @@ let isStorageSupport = true;
 let storageArrival = "";
 let storageDeparture = "";
 
+popup.classList.add("popup--close");
+
 try {
     storageArrival = localStorage.getItem("dateArrival");
     storageDeparture = localStorage.getItem("dateDeparture");
